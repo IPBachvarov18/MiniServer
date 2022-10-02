@@ -12,7 +12,7 @@ namespace MiniHTTP.HTTP.Responses
     {
         HttpResponseStatusCode StatusCode { get; set; }
         IHttpHeaderCollection Headers { get; }
-        byte[] content { get; set; }
+        byte[] Content { get; set; }
         void AddHeader(HttpHeader header);
         byte[] getBytes();
     }
