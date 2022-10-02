@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MiniHTTP.HTTP.Enums;
+using MiniHTTP.HTTP.Headers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +10,10 @@ namespace MiniHTTP.HTTP.Responses
 {
     public interface IHttpResponse
     {
-        //HttresponeStatusCode StatusCode { get; set; }
-        
+        HttpResponseStatusCode StatusCode { get; set; }
+        IHttpHeaderCollection Headers { get; }
+        byte[] content { get; set; }
+        void AddHeader(HttpHeader header);
+        byte[] getBytes();
     }
 }

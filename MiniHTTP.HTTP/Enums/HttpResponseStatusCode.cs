@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiniHTTP.HTTP.Enums
 {
-    enum HttpResponseStatusCode
+    public enum HttpResponseStatusCode
     {
         Ok=200,
         Created=201,
