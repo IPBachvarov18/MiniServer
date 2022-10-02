@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHTTP.HTTP.Exceptions
+namespace MiniHTTP.HTTP.Responses
 {
-    class BadRequestException
+    public interface IHttpResponse
     {
+        //HttresponeStatusCode StatusCode { get; set; }
         
     }
 }

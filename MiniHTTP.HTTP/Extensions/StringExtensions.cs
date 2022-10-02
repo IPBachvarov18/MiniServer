@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHTTP.HTTP.Exceptions
+namespace MiniHTTP.HTTP.Extensions
 {
-    class BadRequestException
+    class StringExtensions
     {
-        
     }
 }
